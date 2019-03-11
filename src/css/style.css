@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dialogue_header_image-cropper {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+img {
+    display: inline-block;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    margin-right: 20px;
+    margin-left: -20px;
+    margin-top: 20px;
+    -moz-transform: scale(1.8);
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: wheat;
+    height: 1000px;
+    width: 100%;
+}
+.dialogue {
+    max-width: 720px;
+    min-width: 360px;
+    width: 490px;
+    height: 500px;
+    background-color: white;
+}
+.dialogue_header {
+    width: 100%;
+}

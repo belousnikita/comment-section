@@ -153,6 +153,8 @@ html,body {
     }
     
     .table_result {
+    display: block;
+    margin-bottom: 32px;
     font-size:16px;
     font-weight:700;
     }
@@ -186,4 +188,52 @@ html,body {
     align-self:center;
     text-align:center;
     padding:5px;
+    }
+
+    .comments_line {
+        width: 100%;
+        font-size: 16px;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 49px;
+        margin-left:18px;
+    }
+    .comments_selector {
+        display: flex;
+        margin:0;
+    }
+    .comments_link {
+        padding-left: 8px;
+        font-weight: 400;
+        color: #005da1;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .comments_likes {
+        display: inline-flex;
+        font-size: 12px;
+        font-weight: 400;
+        margin-left: 12px;
+        margin-right: 25px;
+        justify-self: flex-end;
+    }
+    .comments_likes_heart {
+        margin-top: 4px;
+        margin-right: 4px;
+        width: 12px;
+        height: 12px;
+    }
+    .comments_likes_comment {
+        margin-top: 5px;
+        margin-right: 4px;
+        width: 12px;
+        height: 13px;
+    }
+    label[for=heart] {
+        margin-top: 4px;
+        margin-right: 23px;
+    }
+    label[for=comment] {
+        margin-top: 4px;
     }

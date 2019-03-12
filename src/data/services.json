@@ -2,14 +2,17 @@
     "services": [
         {
             "name": "Ручное бронирование",
+            "color": "#b1e19b",
             "count": 11
         },
         {
             "name": "Пакетные туры",
+            "color": "#ace2f8",
             "count": 3
         },
         {
             "name": "Отели",
+            "color": "#ace2f8",
             "count": 1
         }
     ],

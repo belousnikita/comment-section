@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/chern0us/202190311n#readme",
   "dependencies": {
+    "classnames": "^2.2.6",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "^2.1.8"

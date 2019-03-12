@@ -1,9 +1,11 @@
 html, body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
 }
 
 .dialogue_header_image-cropper {
+    position: absolute;
     width: 120px;
     height: 120px;
     position: relative;
@@ -13,7 +15,7 @@ html, body {
     margin-top: 15px;
 }
 
-img {
+.dialogue_header_avatar {
     display: inline-block;
     margin: 0 auto;
     height: 100%;
@@ -42,4 +44,50 @@ img {
 }
 .dialogue_header {
     width: 100%;
+    margin: 0;
+    display: absolute;
+}
+
+.dialogue_header_name{
+    margin-left: 146px;
+    margin-right: 135px;
+    margin-top: -12px;
+    position: absolute;
+    width: 100%;
+}
+.name {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333333;
+    
+}
+.position {
+    font-size: 10pt;
+    font-weight: regular;
+    margin: 0;
+    color: #808080;
+}
+.dialogue_header_box{
+    max-width: 720p;;
+    position: absolute;
+    display: inline-block;
+    max-width: 365px;
+    font-size: 14px;
+    background-color: #fffbc8;
+    border-radius: 4px;
+    margin-left: 100px;
+    margin-right: 34px;
+    margin-top: 50px;
+
+    -webkit-box-shadow: inset 0px 0px 0px 1px rgba(206,202,191,1);
+    -moz-box-shadow: inset 0px 0px 0px 1px rgba(206,202,191,1);
+    box-shadow: inset 0px 0px 0px 1px rgba(206,202,191,1);
+}
+.dialogue_header_box_text {
+    margin-top: 12px;
+    margin-bottom: 0;
+    padding-left: 46px;
+    padding-right: 14px;
+    padding-bottom: 9px;
 }

@@ -6,7 +6,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -21,7 +23,10 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
     "react-scripts": "^2.1.8"
   },
   "browserslist": [

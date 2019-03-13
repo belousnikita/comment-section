@@ -1,6 +1,9 @@
 import React from "react";
 import data from "./data/services.json";
+import messages from "./data/messages.json";
 import ServiceTable from "./ServicesTable.jsx";
+import Message from "./Message.jsx";
+import InputForm from "./InputForm.jsx";
 
 const namebox = (name, position) => (
   <div className="header_namebox">
@@ -15,8 +18,9 @@ const avatar = img => (
   </div>
 );
 
-const yellowBox = description => (
+const yellowBox = (description, avatar) => (
   <div className="header_box">
+    {avatar}
     <p className="header_box_text">{description}</p>
   </div>
 );
@@ -33,18 +37,17 @@ const commentsLine = (
         alt="Heart"
         id="heart"
       />
-      <label for="heart">131</label>
+      <label htmlFor="heart">131</label>
       <img
         className="comments_likes_comment"
         src={require("./img/comment.png")}
         alt="Comment"
         id="comment"
       />
-      <label for="comment">14</label>
+      <label htmlFor="comment">14</label>
     </div>
   </div>
 );
-
 export default class Page extends React.Component {
   constructor(props) {
     super(props);
@@ -52,24 +55,37 @@ export default class Page extends React.Component {
     this.position = props.position;
     this.description = props.description;
     this.img = props.avatar;
-    this.state = { data: null };
+    this.state = { data: null, messages: null };
   }
   componentDidMount() {
-    this.setState({ data });
+    this.setState({ data, messages: messages.list });
+  }
+  addMessage(msg) {
+    const messages = [...this.state.messages, msg];
+    this.setState({ messages });
   }
   render() {
     const { name, position, description, img } = this;
-    const { data } = this.state;
+    const { data, messages } = this.state;
     return (
       <div className="container">
         <div className="dialogue">
           <div className="header">
             {namebox(name, position)}
-            {avatar(img)}
-            {yellowBox(description)}
+            {yellowBox(description, avatar(img))}
           </div>
           {data && <ServiceTable data={data} />}
           {commentsLine}
+          {messages &&
+            messages.map((msg, i) => (
+              <Message
+                key={i}
+                name={msg.name}
+                date={msg.date}
+                text={msg.text}
+              />
+            ))}
+          {<InputForm addMessage={this.addMessage.bind(this)} />}
         </div>
       </div>
     );

@@ -26,7 +26,7 @@ export default class InputForm extends React.Component {
     if (event) {
       event.preventDefault();
     }
-    if (this.state.message) {
+    if (this.state.message.trim().length > 0) {
       const msg = {
         name: this.state.name,
         date: this.state.date,

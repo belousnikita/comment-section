@@ -367,6 +367,7 @@ label[for=comment] {
 }
 
 .input_button {
+	-webkit-appearance: none;
 	margin-top: 23px;
 	width: 280px;
 	height: 42px;

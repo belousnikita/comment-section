@@ -1,5 +1,5 @@
 {
-  "name": "202190311n",
+  "name": "comment-section",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chern0us/202190311n.git"
+    "url": "git+https://github.com/chern0us/comment-section.git"
   },
   "author": "chern0us",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chern0us/202190311n/issues"
+    "url": "https://github.com/chern0us/comment-section/issues"
   },
-  "homepage": "https://chern0us.github.io/202190311n/",
+  "homepage": "https://chern0us.github.io/comment-section/",
   "dependencies": {
     "classnames": "^2.2.6",
     "react": "^16.8.4",
